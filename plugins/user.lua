@@ -9,5 +9,10 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "ThePrimeagen/harpoon",
+    as = "harpoon",
+    config = function() require("harpoon").setup() end,
+  },
 }
 -- some comment
