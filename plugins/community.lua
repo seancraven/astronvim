@@ -1,12 +1,13 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.colorscheme.nightfox",   enabled = false },
-  { import = "astrocommunity.colorscheme.kanagawa",   enabled = false },
+  { import = "astrocommunity.colorscheme.nightfox",        enabled = false },
+  { import = "astrocommunity.colorscheme.kanagawa",        enabled = false },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme.tokyonight", enabled = true },
+  { import = "astrocommunity.colorscheme.tokyonight",      enabled = true },
   { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   {
     -- further customize the options set by the community
     "copilot.lua",
