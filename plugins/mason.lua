@@ -1,6 +1,5 @@
 -- customize mason plugins
 return {
-  { "williamboman/mason.nvim", opts = { PATH = "append" } },
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
