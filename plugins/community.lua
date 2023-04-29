@@ -8,7 +8,8 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight", enabled = true },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
-  { import = "astrocommunity.pack.python"}
+  { import = "astrocommunity.pack.python"},
+  {import = "astrocommunity.pack.lua"},
   {
     -- further customize the options set by the community
     "copilot.lua",
