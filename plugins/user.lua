@@ -18,6 +18,12 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+  {
+    "geg2102/nvim-python-repl",
+    as = "nvim-python-repl",
+    event = "BufRead",
+    config = function() require("nvim-python-repl").setup() end,
+  },
 }
 -- You can also add new plugins here as well:
 -- Add plugins, the lazy syntax
