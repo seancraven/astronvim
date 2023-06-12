@@ -1,17 +1,13 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.colorscheme.nightfox", enabled = false },
-  { import = "astrocommunity.colorscheme.kanagawa", enabled = false },
-  { import = "astrocommunity.colorscheme.rose-pine" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme.tokyonight", enabled = true },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
-  { import = "astrocommunity.pack.python"},
-  {import = "astrocommunity.pack.lua"},
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
+  { import = "astrocommunity.utility.transparent-nvim" },
   {
-    -- further customize the options set by the community
     "copilot.lua",
     opts = {
       suggestion = {
@@ -32,6 +28,12 @@ return {
     opts = {
       colorcolumn = 120,
       disabled_filetypes = { "help" },
+    },
+  },
+  {
+    "linux-cultist/venv-selector.nvim",
+    opts = {
+      fd_binary_name = "fdfind",
     },
   },
 }
