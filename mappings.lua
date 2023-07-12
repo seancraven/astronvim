@@ -18,7 +18,7 @@ return {
       desc = "Pick to close",
     },
     ["<leader>ma"] = { function() require("harpoon.mark").add_file() end, desc = "Add file to harpoon" },
-    ["<leader>mj"] = { function() require("harpoon.ui").nave_file(1) end, desc = "Navigate to harpoon file 1" },
+    ["<leader>mj"] = { function() require("harpoon.ui").nav_file(1) end, desc = "Navigate to harpoon file 1" },
     ["<leader>mh"] = { function() require("harpoon.ui").nav_file(2) end, desc = "Navigate to harpoon file 2" },
     ["<leader>mk"] = { function() require("harpoon.ui").nav_file(3) end, desc = "Navigate to harpoon file 3" },
     ["<leader>ml"] = { function() require("harpoon.ui").nav_file(4) end, desc = "Navigate to harpoon file 4" },

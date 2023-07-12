@@ -6,6 +6,23 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       -- ensure_installed = { "lua_ls" },
+      config = function()
+        require("lspconfig").grammarly.setup {
+          init_options = { clientId = "client_BaDkMgx4X19X9UxxYRCXZo" },
+          -- cmd = { "node", "/home/sean/.local/share/grammarly/bin/grammarly-language-server", "--stdio" },
+          -- filetypes = { "markdown", "tex", "text" },
+          -- root_dir = require("lspconfig").util.root_pattern(".git", vim.fn.getcwd()),
+          -- settings = {
+          --   grammarly = {
+          --     autoDownload = false,
+          --     enableInlineChecking = "all",
+          --     enableSpellChecking = true,
+          --     enableSuggestions = true,
+          --     useLocales = true,
+          --   },
+          -- },
+        }
+      end,
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
